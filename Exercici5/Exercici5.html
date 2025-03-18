@@ -9,29 +9,31 @@
         <img id="texturaterra" src="image.jpeg" />
         <img id="guernica" src="doom.jpeg" />
         <img id="cara" src="images.jpeg" />
-        <img id="bicicletes" src="s.jpeg" />
+        <img id="bicicletes" src="pngegg.png" />
         <img id="cilindro" src="cacodemon.jpeg">
-        <img id="bola" src="">
-        <img id="anillo" src="i">
+        <img id="bola" src="daima.jpg">
+        <img id="anillo" src="huehue.png">
       </a-assets>
       
       <a-sky src="#fons"></a-sky>
       <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" src="#texturaterra"></a-plane>
       
-      <a-plane position="-1 4 -8" rotation="0 0 0" width="8" height="2" src="#guernica"></a-plane>
+      <a-plane position="-1 4 -8" rotation="0 0 0" width="8" height="2"  src="#guernica"
+        animation="property: position; to: -1 4 -30; dur: 5000; dir: alternate; loop: true;"></a-plane>
       
-      <a-box position="-4 3 0" rotation="0 0 50" src="#cara" depth="1" height="1" width="1"
+      <a-box position="-4 6 0" rotation="0 0 50" src="#cara" depth="3" height="3" width="3"
         animation="property: rotation; to: 0 360 0; dur: 4000; loop: true"></a-box>
       
-      <a-dodecahedron position="8 2 -6" rotation="0 30 0" radius="3" src="#bicicletes"></a-dodecahedron>
+      <a-dodecahedron position="8 99 -6" rotation="0 30 0" radius="25" src="#bicicletes"
+        animation="property: position; to: 8 2 -6; dur: 25000; dir: alternate; loop: true;"></a-dodecahedron>
       
-      <a-sphere position="3 3 -5" radius="2" src="#bicicletes"
+      <a-sphere position="18 3 -2" radius="2" src="#bola"
         animation="property: rotation; to: 0 360 0; dur: 5000; loop: true"></a-sphere>
       
-      <a-cylinder position="-6 1 -4" radius="1" height="5" color="#FF6347"
+      <a-cylinder position="-7 4 -4" radius="1" height="5" src="#cilindro"
         animation="property: rotation; to: 0 360 0; dur: 3000; loop: true"></a-cylinder>
       
-      <a-torus position="5 1 -8" radius="3" tube="0.5" color="#8A2BE2"
+      <a-torus position="5 4 5" radius="2" tube="400" src="#anillo"
         animation="property: rotation; to: 0 360 0; dur: 4000; loop: true"></a-torus>
       
     </a-scene>
