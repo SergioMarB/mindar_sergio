@@ -2,6 +2,17 @@
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   </head>
+  <script>
+    let unobjecte = document.querySelector("#esmou");
+ 
+    unobjecte.addEventListener("click", () => {            
+      unobjecte.setAttribute("animation", {
+        property: "position",
+        to: "8 40 -6",
+        dur: 10000
+      });
+    });
+  </script>
   <body>
     <a-scene>
       <a-assets>
@@ -24,8 +35,8 @@
       <a-box position="-4 6 0" rotation="0 0 50" src="#cara" depth="3" height="3" width="3"
         animation="property: rotation; to: 0 360 0; dur: 4000; loop: true"></a-box>
       
-      <a-dodecahedron position="8 99 -6" rotation="0 30 0" radius="25" src="#bicicletes"
-        animation="property: position; to: 8 2 -6; dur: 25000; dir: alternate; loop: true;"></a-dodecahedron>
+      <a-dodecahedron position="8 20 -6" rotation="0 30 0" radius="6" src="#bicicletes"
+        animation="property: position; to: 8 5 -6; dur: 2500; dir: alternate; loop: true;"></a-dodecahedron>
       
       <a-sphere position="18 3 -2" radius="2" src="#bola"
         animation="property: rotation; to: 0 360 0; dur: 5000; loop: true"></a-sphere>
